@@ -1,0 +1,212 @@
+﻿
+body {
+    margin: 0 auto;
+    background-color: antiquewhite;
+    color: grey;
+}
+
+html {
+    font-size: 16px
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    width: 80px;
+    margin: 10px;
+}
+
+.ul-list {
+    margin-right: 50px;
+}
+
+.li-list {
+    display: inline;
+    color: grey;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+    .li-list:hover {
+        color: #ccc;
+        background-color: antiquewhite;
+        padding: 3px;
+        border-radius: 30%;
+    }
+
+    .li-list:visited {
+        color: blueviolet;
+    }
+
+    .li-list:link {
+        color: coral
+    }
+/*navigazione*/
+.nav {
+    z-index: 1;
+    display: inline;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+/*stile banner*/
+.image-banner {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto 200px auto;
+}
+
+#banner-div {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.banner-h1 {
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    position: absolute;
+}
+/*stile stanze*/
+.stanze{
+    max-width: 400px;
+    max-height: 350px;
+    margin: 30px;
+    border: 2px solid grey;
+}
+.div-stanze{
+ display: flex;
+ flex-wrap: wrap;
+}
+.containe-main {
+    padding: 40px;
+    margin: 0 auto;
+    display: flex;
+}
+.img-home{
+   max-width: 400px;
+   margin: 20px;
+}
+.immagini {
+    margin: 20px;
+    flex: 30%;
+}
+.hotel {
+    float: left;
+    margin: 20px;
+    flex: 60%;
+    max-width: 800px;
+}
+/*stile della form di contatti*/
+.form {
+    margin: 0 auto;
+    border: 1px double brown;
+    padding: 50px;
+    max-width: 600px;
+    background-color: white;
+}
+
+input[type=radio] {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+}
+
+input[type=text],[type=email], [type=tel] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin: 15px;
+}
+
+ input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+#text-area {
+    width: 100%;
+   padding-bottom: 150px;
+}
+
+/*stile footer*/
+footer {
+    margin-top: 200px;
+}
+
+.footer-div {
+    background-color: beige;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.footer-thanks {
+    margin: 20px auto;
+}
+.contatto {
+   background-color: whitesmoke;
+   padding: 20px;
+   border-radius: 20%;
+   max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 100px auto;
+}
+.contact {
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+.space{
+ margin-right: 12px;
+}
