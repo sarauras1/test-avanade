@@ -1,16 +1,20 @@
 ﻿<!DOCTYPE html>
-<html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link href="Style.css" rel="stylesheet" />
     <meta charset="utf-8" />
-    <title>Home page</title>
+    <title>Login Page</title>
+    <script src="Script.js"></script>
+    <link href="Style.css" rel="stylesheet" />
+
 </head>
 <body>
     <header>
         <nav class="nav">
+
             <img id="logo" src="logo.jpg" />
             <div class="spacer"></div>
-            <a href="loginPage.html"><input type="button" value="login" /></a>
+            <a href="Hotel_home.html"><input id="logout" disabled type="button" value="logOut" /></a>
             <ul class="ul-list">
                 <li class="li-list"><a class="link-active" href="Hotel_home.html">Home</a></li>
                 <li class="li-list"><a class="link-active" href="hotel_stanze.html">Le Nostre Stanze</a></li>
@@ -18,24 +22,21 @@
             </ul>
         </nav>
     </header>
-
     <banner>
         <div id="banner-div">
             <img class="image-banner" src="hotel-image.jpg" />
-            <h1 class="banner-h1">Le nostre Stanze</h1>
+            <h1 class="banner-h1">Log in</h1>
         </div>
     </banner>
-
-    
-    <div class="div-stanze">
-      
-    
-        <img class="stanze" src="image-stanza-1.png" />
-        <img class="stanze" src="image-stanza-2.jpg" />
-        <img  class="stanze" src="image-stanza-3.jpg" />
-        <img class="stanze" src="image-stanza-1.png" />
-        <img class="stanze" src="image-stanza-2.jpg" />
-        <img class="stanze" src="image-stanza-3.jpg" />
+    <div class="form" id="loginForm">
+        <form>
+            <label>Nome</label>
+            <input id="field-n" type="text" placeholder="inserisci il tuo nome" required />
+            <label>Password</label>
+            <input id="field-p" type="password" placeholder="inserisci la password" required />
+            <input id="loginButton" type="submit" value="Login" onclick="save()" />
+        </form>
+       
     </div>
     <footer>
         <div class="footer-div">

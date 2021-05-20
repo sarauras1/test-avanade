@@ -48,7 +48,9 @@ a {
         color: coral;
     }
 
-  
+  .hidden{
+      display: none;
+  }
 /*navigazione*/
 .nav {
     z-index: 1;
@@ -125,10 +127,18 @@ a {
     max-width: 800px;
 }
 /*stile della form di contatti*/
-.form {
-    margin: 0 auto;
+
+#loginForm {
+    margin: 100px auto 300px auto;
+    padding-bottom: 100px;
+}
+#loginForm input{
+  margin: 3px auto 5px auto;
+}
+    .form {
+    margin: 100px auto;
     border: 1px double brown;
-    padding: 50px;
+    padding: 100px 50px;
     max-width: 600px;
     background-color: white;
 }
@@ -139,7 +149,7 @@ input[type=radio] {
     margin-top: 10px;
 }
 
-input[type=text],[type=email], [type=tel] {
+input[type=text],[type=email], [type=tel],[type=password] {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -176,6 +186,7 @@ input[type=submit] {
 footer {
     margin-top: 200px;
 }
+
 
 .footer-div {
     background-color: beige;
