@@ -47,10 +47,37 @@ a {
     .active-link:visited {
         color: coral;
     }
+/* scheda tecnica*/
+ #container-sc{
+  
+   display: flex;
+   max-width: 1200px;
+   margin: 200px auto;
+   background-color: floralwhite;
+ }
+ .film{
+     padding: 8px;
+ }
+ .col-left{
+    flex: 50%;   
+    margin: 5px auto;
+ }
+ .col-right{
+   flex: 50%;
+   margin: 5px auto;
+ }
+ .img{
+     width: 100%;
+ }
+ .testo{
+     width: 99%;
+ }
+ .durata,
+ .anno,
+ .titolo-film {
+     font-weight: bold;
 
-  .hidden{
-      display: none;
-  }
+ }
 /*navigazione*/
 .nav {
     z-index: 1;
@@ -96,43 +123,22 @@ a {
     justify-content: center;
     position: absolute;
 }
-/*stile stanze*/
-.stanze{
-    max-width: 400px;
-    max-height: 350px;
-    margin: 30px;
-    border: 2px solid grey;
-}
-.div-stanze{
- display: flex;
- flex-wrap: wrap;
-}
-.containe-main {
-    padding: 40px;
-    margin: 0 auto;
+/*stile video*/
+ .video{
+    width: 800px;
+    height: 600px;
+    margin: 200px auto;  
     display: flex;
-}
-.img-home{
-   max-width: 400px;
-   margin: 20px;
-}
-.immagini {
-    margin: 20px;
-    flex: 30%;
-}
-.hotel {
-    float: left;
-    margin: 20px;
-    flex: 60%;
-    max-width: 800px;
-}
+    justify-self: center;
+    align-self: center;
+ }
 /*stile della form di contatti*/
 
-#loginForm {
+#Form {
     margin: 100px auto 300px auto;
     padding-bottom: 100px;
 }
-#loginForm input{
+#Form input{
   margin: 3px auto 5px auto;
 }
     .form {
@@ -143,13 +149,9 @@ a {
     background-color: white;
 }
 
-input[type=radio] {
-    display: inline-block;
-    float: right;
-    margin-top: 10px;
-}
 
-input[type=text],[type=email], [type=tel],[type=password] {
+
+input[type=email], [type="name"] {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -177,10 +179,7 @@ input[type=submit] {
         background-color: #45a049;
     }
 
-#text-area {
-    width: 100%;
-   padding-bottom: 150px;
-}
+
 
 /*stile footer*/
 footer {
@@ -202,22 +201,7 @@ footer {
 .footer-thanks {
     margin: 20px auto;
 }
-.contatto {
-   background-color: whitesmoke;
-   padding: 20px;
-   border-radius: 20%;
-   max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin: 100px auto;
-}
-.contact {
-    text-align: center;
-    margin: 10px;
-    font-size: 20px;
-}
+
 .space{
  margin-right: 12px;
 }

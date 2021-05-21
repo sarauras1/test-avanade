@@ -1,0 +1,52 @@
+﻿<!-- • Home
+- Deve contenere una barra di navigazione orizzontale che porti alle altre pagine 
+Passando il cursore sul singolo
+elemento della barra di navigazione deve cambiare lo sfondo dell’elemento.
+Deve contenere il video del trailer del film centralmente (suggerimento: usare tag: iframe)) -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="Style.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+
+    <script src="Script.js"></script>
+    <title>Home Page Movies</title>
+</head>
+
+<body onload="load()">
+    <header>
+        <nav class="nav">
+
+            <img id="logo" src="logo.jpg" />
+            <div class="spacer"></div>
+            <ul class="ul-list">
+
+                <li class="li-list"><a class="link-active" href="news.html">News</a></li>
+                <li class="li-list"><a class="link-active" href="scheda-tecnica.html">scheda-tecnica</a></li>
+            </ul>
+        </nav>
+    </header>
+    <banner>
+        <div id="banner-div">
+            <img class="image-banner" src="movies-3.png" />
+            <h1 class="banner-h1">I nuovi arrivi</h1>
+        </div>
+    </banner>
+    <div class="video-iframe">
+        <iframe  class="video" src="https://www.youtube.com/embed/w3NwB9PLxss" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+      
+    </div>
+
+    <footer>
+        <div class="footer-div">
+            <h3 class="footer-thanks">SARA URAS</h3>
+            <span class="copy-right">&copy; All Rights Reserved Sara Uras Web Developer</span>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="Style.css" rel="stylesheet" />
+    <script src="Script.js"></script>
+    <meta charset="utf-8" />
+    <title>News</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+
+            <img id="logo" src="logo.jpg" />
+            <div class="spacer"></div>
+
+            <ul class="ul-list">
+                <li class="li-list"><a class="link-active" href="home.html">Home</a></li>
+                <li class="li-list"><a class="link-active" href="news.html">News</a></li>
+                <li class="li-list"><a class="link-active" href="scheda-tecnica.html">scheda-tecnica</a></li>
+            </ul>
+        </nav>
+    </header>
+    <banner>
+        <div id="banner-div">
+            <img class="image-banner" src="movies-3.png" />
+            <h1 class="banner-h1">News letters</h1>
+        </div>
+    </banner>
+    <div class="form" id="Form">
+        <form>
+            <h3>News letters</h3><br/>
+            <label>Nome</label>
+            <input id="field-n" type="name" placeholder="inserisci il tuo nome" required />
+            <label>Email</label>
+            <input id="field-e" type="email" placeholder="subscribe for our news letters" required />
+            <input disabled id="Unsubscribe" type="button" value='UnSubscribe' type="submit" onclick="Unsubscribe(show( Disabled()))" />
+            <input id="subscribe" type="submit" value="Subscribe" onclick="save()" />
+        </form>
+    </div>
+    <footer>
+        <div class="footer-div">
+            <h3 class="footer-thanks">SARA URAS</h3>
+            <span class="copy-right">&copy; All Rights Reserved Sara Uras Web Developer</span>
+        </div>
+    </footer>
+</body>
+
+</html>
